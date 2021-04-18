@@ -1,0 +1,508 @@
+/* Global */
+html {
+    font-size: 0.625rem;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+.title-container {
+    padding: 0px 0px;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 0 1rem;
+    transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.nav-link-apple {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("../../images/icons/apple.svg") center no-repeat;
+}
+
+.nav-link-search {
+    width: 2.6rem;
+    height: 4.4rem;
+    background: url("../../images/icons/search.svg") center no-repeat;
+}
+
+.nav-link-bag {
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url("../../images/icons/bag.svg") center no-repeat;
+}
+
+/* iPhone 12 Pro section */
+.iphone-12-pro {
+    background: url("../../images/hero/iphone-12-pro/iphone_12_pro__f7ri3g4x75m6_large.jpg");
+    margin-top: 4.4rem;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5.5rem;
+}
+
+.title-iphone-12 {
+    margin-top: 60px;
+}
+
+.sub-container {
+    margin-top: 0;
+}
+
+.title-heading {
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -0.005rem;
+}
+
+.title-sub-heading {
+    font-size: 2.65rem;
+    margin-top: 0.6rem;
+    letter-spacing: 0.008rem;
+    font-weight: 400;
+}
+
+.title-price,
+.title-subline {
+    font-size: 1.7rem;
+    color: #888;
+    margin-top: 0.68rem;
+    text-align: center;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 1.8rem;
+}
+.cta-link {
+    color: #0066cc;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+    border-bottom: 2px solid #0066cc;
+}
+
+.iphone-12-image {
+    background: url("../../images/hero/iphone-12/apple_iphone-12_new-design_geo_10132020.jpg.news_app_ed.jpg");
+    min-height: 58%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: 45%;
+    position: absolute;
+    top: 82%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1068px) {
+    .iphone-12-image {
+        background: url("../../images/hero/iphone-12/apple_iphone-12_new-design_geo_10132020.jpg.news_app_ed.jpg");
+        min-height: 100%;
+        min-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        position: absolute;
+        top: 39%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero {
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title-heading {
+        font-size: 4.4rem;
+    }
+
+    .title-sub-heading {
+        font-size: 2.4rem;
+    }
+
+    .cta-link:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .title-heading-watch {
+        height: 6.2rem;
+        background-size: auto 6.2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 0.425rem;
+    }
+
+    header {
+        height: 4.8rem;
+        transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1), height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container {
+        padding: 0;
+    }
+
+    .iphone-12 {
+        margin: 0 auto;
+    }
+
+    .iphone-12-image {
+        background-size: 65%;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 45%;
+    }
+
+    .iphone-12-pro {
+        background-color: black;
+        background: url("../../images/hero/iphone-12-pro/iPhone_12_Pro_mobile.jpg");
+        background-size: 48%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        top: 40%;
+    }
+
+    .nav-list {
+        margin-top: 0;
+    }
+
+    .nav-list-mobile {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 8.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item-hidden {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+        margin-top: 20px;
+    }
+
+    .line-top {
+        margin-top: 3px;
+    }
+
+    .line-bottom {
+        margin-top: -0.4rem;
+    }
+
+    .active .line-top {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .active .line-bottom {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active {
+        height: 100%;
+        background-color: #000;
+    }
+
+    .nav-link-apple {
+        width: 2.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag {
+        width: 2.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav-link {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 10rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+    }
+
+    .active .nav-list-larger {
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .nav-list-larger .nav-item {
+        left: 6px;
+        bottom: 71px;
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-list-larger .nav-item:nth-child(9),
+    .nav-list-larger .nav-item:nth-child(1) {
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.title-dark {
+    color: #000;
+}
+
+.dark-theme {
+    background-color: #000;
+}
+
+.cta-link-darker {
+    color: #2997ff;
+}
+
+.cta-link-darker:hover {
+    border-bottom: 2px solid #2997ff;
+}
+
+/* Moved to bottom of all sections for consistent styles */
+.hero {
+    height: 69.2rem;
+    background-repeat: no-repeat;
+    border-top: 0.6rem solid #ffffff;
+    border-bottom: 0.6rem solid #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-size: auto 73.6rem;
+        background-position: center;
+    }
+}
+
+.iphone-12-pro {
+    border-top: none;
+}
+
+.white-background {
+    background-color: #fbfbfd;
+}
+
+.ipadair-image {
+    height: 42rem;
+    position: relative;
+    background: url("../../images/hero/iPad-air/ipad-air_overview__gfldx5mj3tiu_og.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 0.65fr auto;
+    border: 0.825rem solid white;
+} */
+
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.75fr auto;
+    }
+}
+
+.watch {
+    position: relative;
+    background-color: black;
+    /* max-width: 90%; */
+}
+
+.title-heading-watch {
+    height: 7.8rem;
+    background: url("../../images/hero/watch/watch_series6_logo.png") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+
+.watch-image {
+    height: 40rem;
+    background: url("../../images/hero/watch/Apple-5.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.apple-logo-darker {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("../../images/icons/apple-dark.jpg") center no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin: auto center;
+}
+
+.align-center {
+    left: 50%;
+    transform: translate(25%);
+}
+
+.title-heading-fitnessplus {
+    margin-left: 30px;
+}
+
+.title-heading-one {
+    margin-left: 30px;
+}
+
+.fitness-image {
+    height: 40rem;
+    background: url("../../images/hero/apple-fitness+/Apple_fitnessplus.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.align-center-appleone {
+    display: flex;
+    justify-content: center;
+    margin-right: 11.5rem;
+}
+
+.aplleone-image {
+    height: 40rem;
+    background: url("../../images/hero/watch/Apple-One-bundle-services-icons.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.apllecard-image {
+    height: 30rem;
+    margin: 44px 0px 0px 72px;
+    background: url("../../images/hero/watch/Apple-Credit-Card.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
